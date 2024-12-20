@@ -1,0 +1,14 @@
+repeat task.wait() until game:IsLoaded()
+local TablePlace = {74996547144918}
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Nguyenblox", -- Required
+	Text = "I'm continuing to update more, Wait me baubau~", -- Required
+	Icon = "74996547144918", -- Optional
+	Duration = 10
+})
+if table.find(TablePlace,game.PlaceId) then
+    getgenv().Game = "BF"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/BF-New.lua"))()
+else
+    game.Players.LocalPlayer:Kick("not Support")
+end
